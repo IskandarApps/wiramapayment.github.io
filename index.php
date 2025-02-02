@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $warnaapk = $_POST["warnaapk"];
     $nama_aplikasi = $_POST["nama_aplikasi"];
     $id_user = $_POST["id_pengirim"];
-    $biaya_admin = 1000;
+    $biaya_admin = 0;
     $total_jumlah_kurang = $jumlahkirim + $biaya_admin;
 
     $post_body_tambah = array(
