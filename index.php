@@ -2,7 +2,7 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $token = "CLOSED_APIKEY";
+    $token = "QUErSjB0MU5kRERBRGIxQ3N5K2xQSVpSZms5NDZBRDdkdWswK2dWcE42WFR0bFkyWDJGcGlybzcyTDJ0cThDUmZMUTA5NjJ1Wkp4RUFWVkN6eTdwcCtyZjYzcjhsdmtPZGVyQ1RsbnVuZTBES09OejA0YzdwZ1pwMmxWQjRtQy9DOGQyOGZqbUZtdE9IWU1VQkpMUExmZFFSa0g0Z0xsUGI3NEkxV3VUNzVtZ25oQXNhL01WTlZjeE82YVZ1bW1Y";
     $header = array("Authorization: Bearer " . $token);
 
     $emailpengirim = $_POST["email_pengirim"];
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "email_user" => $emailpengirim,
         "tipe" => "kurang",
         "jumlah" => $total_jumlah_kurang,
-        "catatan_saldo" => "Kirim Saldo ke $emailpenerima + Biaya Admin Rp 1.000",
+        "catatan_saldo" => "Kirim Saldo ke $emailpenerima + Biaya Admin Rp 0",
     );
 
     $ch_tambah = curl_init();
@@ -337,7 +337,7 @@ h9{
           </div>
           
           <div style="float:right">
-              <h8>Rp 1.000</h8>
+              <h8>Rp 0</h8>
           </div>
           </div>
           
@@ -349,7 +349,7 @@ h9{
 <b><p style="font-size: 15px;color: #1565C0;">Transfer saldo Berhasil dilakukan</p></b>
                       
                       
-            <a href="https://gampediadigital.olshopku.com//akun/?page=catatan_saldo">
+            <a href="https://wiramapayment.olshopku.com//akun/?page=catatan_saldo">
 <button class="keluar">CEK RIWAYAT TRANSFER</button></a>
      </a>
     </div>
